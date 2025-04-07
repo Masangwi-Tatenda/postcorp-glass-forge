@@ -1,4 +1,3 @@
-
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
@@ -51,7 +50,7 @@ const ServicesPage = () => {
     {
       title: 'Cladding',
       description: 'Innovative exterior cladding solutions that enhance building aesthetics and protection.',
-      detailedDescription: 'Our exterior cladding systems provide both aesthetic enhancement and practical protection for buildings. We offer a variety of materials including aluminum composite panels, glass panels, and more. Our cladding solutions are designed to withstand Zimbabwe's climate conditions while maintaining visual appeal for years to come.',
+      detailedDescription: 'Our exterior cladding systems provide both aesthetic enhancement and practical protection for buildings. We offer a variety of materials including aluminum composite panels, glass panels, and more. Our cladding solutions are designed to withstand Zimbabwe\'s climate conditions while maintaining visual appeal for years to come.',
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <rect x="3" y="3" width="18" height="18" rx="2"></rect>
@@ -77,7 +76,7 @@ const ServicesPage = () => {
     {
       title: 'Custom Solutions',
       description: 'Tailored architectural glass solutions for unique design requirements and specialized projects.',
-      detailedDescription: 'When standard solutions don't meet your needs, our custom architectural glass services deliver precisely what you envision. We work closely with architects, designers, and property owners to create unique glass features that serve both functional and aesthetic purposes.',
+      detailedDescription: 'When standard solutions don\'t meet your needs, our custom architectural glass services deliver precisely what you envision. We work closely with architects, designers, and property owners to create unique glass features that serve both functional and aesthetic purposes.',
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M12 20h9"></path>

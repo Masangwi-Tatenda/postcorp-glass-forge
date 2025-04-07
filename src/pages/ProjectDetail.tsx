@@ -23,7 +23,7 @@ const projects = [
     year: '2023',
     services: ['Curtain Walling', 'Glass & Aluminum'],
     challenge: 'The client required a facade that would maximize natural light while minimizing solar heat gain, all while maintaining a sleek, modern appearance that would stand out in the cityscape.',
-    solution: 'We implemented a custom curtain wall system using low-E glass with a subtle blue tint that reduces UV penetration while maintaining excellent visibility. The aluminum framing was designed to complement the building's architectural features while providing robust support for the glass panels.',
+    solution: 'We implemented a custom curtain wall system using low-E glass with a subtle blue tint that reduces UV penetration while maintaining excellent visibility. The aluminum framing was designed to complement the building\'s architectural features while providing robust support for the glass panels.',
     result: 'The completed project has significantly reduced the building\'s energy consumption through improved thermal performance while creating a striking visual presence in Harare\'s skyline. The interior spaces benefit from abundant natural light without excessive heat, creating a comfortable working environment for employees.',
     testimonial: {
       quote: "Postcorp Glass delivered exactly what we envisioned for our headquarters. The quality of work and attention to detail exceeded our expectations.",
@@ -50,7 +50,7 @@ const projects = [
     solution: 'We designed and installed custom floor-to-ceiling windows with specialized glazing that offers excellent thermal insulation. For the interior, we created frameless shower enclosures and glass railings that enhance the open feeling of the space while maintaining safety and functionality.',
     result: 'The completed residence features seamless transitions between indoor and outdoor spaces, with glass elements that highlight the architectural design while providing exceptional performance. The homeowner now enjoys panoramic views with privacy and comfort throughout the seasons.',
     testimonial: {
-      quote: "The glass features in our home have transformed the living experience. Postcorp's attention to detail and quality craftsmanship is evident in every installation.",
+      quote: "The glass features in our home have transformed the living experience. Postcorp\'s attention to detail and quality craftsmanship is evident in every installation.",
       author: "Private Client",
       position: "Homeowner"
     }
