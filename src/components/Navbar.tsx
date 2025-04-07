@@ -38,11 +38,10 @@ const Navbar = () => {
       <div className="container flex items-center justify-between py-4">
         <Link to="/" className="flex items-center space-x-2">
           <img 
-            src="https://postcorpglass.co.zw/wp-content/uploads/2024/02/cropped-Postcorp-Logo-PPSC-1024x1024.png" 
+            src="/assets/images/logo.png" 
             alt="Postcorp Glass Logo" 
             className="h-10 w-auto"
           />
-          <span className="text-xl font-semibold text-primary">Postcorp Glass</span>
         </Link>
 
         {/* Desktop Navigation */}

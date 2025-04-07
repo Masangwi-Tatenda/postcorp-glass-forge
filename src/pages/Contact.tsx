@@ -83,8 +83,16 @@ const ContactPage = () => {
                   <div>
                     <h3 className="text-lg font-semibold mb-2">Our Office</h3>
                     <p className="text-muted-foreground">
-                      123 Industrial Avenue<br />
-                      Msasa, Harare<br />
+                      53 Cameroon Street<br />
+                      Harare<br />
+                      Zimbabwe
+                    </p>
+                  </div>
+                  <div className="ml-12">
+                    <h3 className="text-lg font-semibold mb-2">Our Workshop</h3>
+                    <p className="text-muted-foreground">
+                      32 Simon Mazorodze Road<br />
+                      Waterfalls, Harare<br />
                       Zimbabwe
                     </p>
                   </div>
@@ -100,8 +108,9 @@ const ContactPage = () => {
                   <div>
                     <h3 className="text-lg font-semibold mb-2">Call Us</h3>
                     <p className="text-muted-foreground">
-                      +263 242 123 4567<br />
-                      +263 772 123 456
+                     +263 772 957 823 <br /> 
+                     +263 733 210 243 <br />
+                     +263 733 381 714
                     </p>
                   </div>
                 </div>
@@ -116,7 +125,6 @@ const ContactPage = () => {
                   <div>
                     <h3 className="text-lg font-semibold mb-2">Email Us</h3>
                     <p className="text-muted-foreground">
-                      info@postcorpglass.co.zw<br />
                       sales@postcorpglass.co.zw
                     </p>
                   </div>
@@ -141,16 +149,22 @@ const ContactPage = () => {
               </div>
               
               {/* Map */}
-              <div className="mt-12 rounded-lg overflow-hidden aspect-video">
-                <iframe 
+              <div className="mt-12 rounded-lg overflow-hidden" style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}>
+                <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15602.42909033226!2d31.12799436977539!3d-17.83062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1931a4ed505e028d%3A0xa5143b9be5134bb1!2sMsasa%2C%20Harare%2C%20Zimbabwe!5e0!3m2!1sen!2sus!4v1712540082728!5m2!1sen!2sus"
-                  width="100%" 
-                  height="100%" 
-                  style={{ border: 0 }} 
-                  allowFullScreen 
-                  loading="lazy" 
+                  style={{
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    width: '100%',
+                    height: '100%',
+                    border: 0,
+                  }}
+                  allowFullScreen
+                  loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   title="Google Map of Postcorp Glass Location"
+                  aria-label="Map showing the location of Postcorp Glass in Msasa, Harare, Zimbabwe"
                 />
               </div>
             </div>
