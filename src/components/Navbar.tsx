@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,11 +22,11 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Home', href: '#hero' },
-    { name: 'Services', href: '#services' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'About', href: '#about' },
-    { name: 'Contact', href: '#contact' }
+    { name: 'Home', href: '/' },
+    { name: 'Services', href: '/services' },
+    { name: 'Projects', href: '/projects' },
+    { name: 'About', href: '/about' },
+    { name: 'Contact', href: '/contact' }
   ];
 
   return (
@@ -35,22 +36,27 @@ const Navbar = () => {
       }`}
     >
       <div className="container flex items-center justify-between py-4">
-        <a href="#hero" className="flex items-center space-x-2 text-2xl font-semibold">
-          <span className="text-primary">Postcorp Glass</span>
-        </a>
+        <Link to="/" className="flex items-center space-x-2">
+          <img 
+            src="https://postcorpglass.co.zw/wp-content/uploads/2024/02/cropped-Postcorp-Logo-PPSC-1024x1024.png" 
+            alt="Postcorp Glass Logo" 
+            className="h-10 w-auto"
+          />
+          <span className="text-xl font-semibold text-primary">Postcorp Glass</span>
+        </Link>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex md:items-center md:space-x-6">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.name}
-              href={link.href}
+              to={link.href}
               className="text-sm font-medium text-foreground hover:text-primary transition-colors"
             >
               {link.name}
-            </a>
+            </Link>
           ))}
-          <Button variant="default">Get a Quote</Button>
+          <Button variant="default" onClick={() => window.location.href = '/quote'}>Get a Quote</Button>
         </div>
 
         {/* Mobile Navigation Toggle */}
@@ -67,16 +73,25 @@ const Navbar = () => {
         <div className="md:hidden bg-background py-4 px-6 shadow-lg animate-fade-in">
           <div className="flex flex-col space-y-4">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.name}
-                href={link.href}
+                to={link.href}
                 className="text-lg font-medium text-foreground hover:text-primary"
                 onClick={() => setIsOpen(false)}
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
-            <Button variant="default" className="mt-2 w-full">Get a Quote</Button>
+            <Button 
+              variant="default" 
+              className="mt-2 w-full"
+              onClick={() => {
+                window.location.href = '/quote';
+                setIsOpen(false);
+              }}
+            >
+              Get a Quote
+            </Button>
           </div>
         </div>
       )}
