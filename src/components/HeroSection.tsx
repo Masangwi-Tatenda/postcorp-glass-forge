@@ -22,10 +22,10 @@ const HeroSection = () => {
             Premium architectural glass and aluminum solutions for modern construction projects across Zimbabwe.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button size="lg" className="bg-white text-primary hover:bg-white/90">
+            <Button size="lg" className="bg-white text-primary hover:bg-primary hover:text-white">
               View Our Work
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/20">
+            <Button size="lg" className="text-white bg-primary hover:bg-white hover:text-primary">
               Request a Quote
             </Button>
           </div>

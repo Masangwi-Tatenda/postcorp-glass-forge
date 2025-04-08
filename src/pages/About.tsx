@@ -6,33 +6,6 @@ import { Link } from 'react-router-dom';
 import { Award, Clock, Users, Shield, Target, ThumbsUp } from 'lucide-react';
 
 const AboutPage = () => {
-  const teamMembers = [
-    {
-      name: 'John Doe',
-      position: 'Managing Director',
-      image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a',
-      bio: 'With over 25 years of experience in the glass and aluminum industry, John leads Postcorp with a focus on innovation and quality.'
-    },
-    {
-      name: 'Sarah Smith',
-      position: 'Technical Director',
-      image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2',
-      bio: 'Sarah oversees all technical aspects of our projects, ensuring that designs meet engineering standards and client specifications.'
-    },
-    {
-      name: 'Michael Brown',
-      position: 'Operations Manager',
-      image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7',
-      bio: 'Michael ensures smooth execution of all projects, coordinating our skilled teams and maintaining our quality control processes.'
-    },
-    {
-      name: 'Grace Moyo',
-      position: 'Design Lead',
-      image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956',
-      bio: 'Grace brings creative vision to our projects, translating client goals into innovative architectural glass solutions.'
-    }
-  ];
-
   const milestones = [
     {
       year: '1998',
@@ -204,37 +177,6 @@ const AboutPage = () => {
                 </div>
               ))}
             </div>
-          </div>
-        </div>
-      </section>
-      
-      {/* Our Team */}
-      <section className="py-16 bg-secondary/10">
-        <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Our Leadership Team</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Meet the experienced professionals who lead our company to excellence.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {teamMembers.map((member, index) => (
-              <div key={index} className="bg-card rounded-lg overflow-hidden transition-transform hover:-translate-y-1">
-                <div className="aspect-square overflow-hidden">
-                  <img 
-                    src={member.image} 
-                    alt={member.name}
-                    className="w-full h-full object-cover object-center"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-1">{member.name}</h3>
-                  <p className="text-primary text-sm mb-3">{member.position}</p>
-                  <p className="text-muted-foreground text-sm">{member.bio}</p>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </section>
